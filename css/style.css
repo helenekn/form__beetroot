@@ -162,7 +162,7 @@ body {
 
 .form__terms {
    max-width: 410px;
-   margin-bottom: 20px;
+   padding-bottom: 20px;
 }
 
 .terms__text {
@@ -175,7 +175,8 @@ body {
 }
 
 .form__login {
-   margin-top: 20px;
+   padding-top: 20px;
+   position: relative;
 }
 
 .login {
@@ -184,6 +185,11 @@ body {
    justify-content: space-between;
    margin: 0 auto;
    gap: 20px;
+}
+
+.form__login::before {
+   content: "";
+   position: absolute;
 }
 
 .login__text {
@@ -211,7 +217,7 @@ body {
 }
 
 .form__button_small {
-   margin-bottom: 88px;
+   margin-bottom: 112px;
    width: 38%;
 }
 
