@@ -1,0 +1,222 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html,
+body {
+   min-height: 100vh;
+   font-family: var(--font-family);
+   background: var(--main-background);
+   font-size: var(--font-size-main);
+   color: var(--font-color);
+}
+
+.main {
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   max-width: var(--width-container);
+}
+
+.section {
+   height: 100vh;
+   max-width: 570px;
+   margin: 55px auto;
+}
+
+.form {
+   padding: 35px 34px 16px;
+   display: flex;
+   flex-direction: column;
+   background: #ffffff;
+}
+
+.section__title {
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.3;
+   color: #1c1c1c;
+}
+
+.form__label,
+.form__button,
+.form__gender,
+.form__photo {
+   margin-top: 20px;
+}
+
+.data {
+   display: flex;
+   justify-content: space-between;
+   gap: 12px;
+}
+
+.data__flex,
+.address__flex {
+   display: flex;
+   flex-direction: column;
+}
+
+.form__label {
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+}
+
+.bottom-text {
+   margin-top: 7px;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 1.4;
+}
+
+.gender {
+   display: flex;
+   justify-content: flex-start;
+   gap: 20px;
+}
+
+.gender label input {
+   opacity: 0;
+}
+
+.gender label span {
+   position: relative;
+   left: -15px;
+   top: 4px;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #e4e4e4;
+   background-color: #fff;
+   border-radius: 100%;
+}
+
+.gender label span::after {
+   content: "";
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   width: 14px;
+   height: 14px;
+   border: 6px solid #007bff;
+   background-color: #fff;
+   border-radius: 50%;
+   opacity: 0;
+}
+
+.gender label input:checked ~ span::after {
+   opacity: 1;
+}
+
+.address {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.form__input,
+.form__select {
+   font-family: "Inter";
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   letter-spacing: -0.2px;
+   color: var(--font-color);
+   background: #ffffff;
+   border: 1px solid #e4e4e4;
+   border-radius: 6px;
+   margin-top: 7px;
+}
+
+.form__input {
+   padding: 7px 10px;
+}
+
+.form__select {
+   padding: 8px 10px;
+   width: 230px;
+}
+
+.form__button {
+   width: 100%;
+   margin-bottom: 22px;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 1.5;
+   text-align: center;
+   letter-spacing: -0.1px;
+   color: #ffffff;
+   background: #007bff;
+   border: 1px solid #e4e4e4;
+   border-radius: 6px;
+   padding: 8px 0;
+}
+
+.form__terms {
+   max-width: 410px;
+   margin-bottom: 20px;
+}
+
+.terms__text {
+   font-weight: 410px;
+   font-size: 13px;
+   line-height: 1.3;
+   text-align: center;
+   letter-spacing: -0.1px;
+   color: #969696;
+}
+
+.form__login {
+   margin-top: 20px;
+}
+
+.login {
+   max-width: 177px;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   gap: 20px;
+}
+
+.login__text {
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 1.5;
+   text-align: right;
+   letter-spacing: -0.2px;
+   color: var(--font-color);
+}
+
+.login__link {
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 1.5;
+   letter-spacing: -0.1px;
+}
+
+.photo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.form__button_small {
+   margin-bottom: 88px;
+   width: 38%;
+}
+
+.trash img {
+   background: #ffffff;
+   border: 1px solid #e4e4e4;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 1px;
+   padding: 7px;
+}

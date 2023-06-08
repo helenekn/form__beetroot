@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/normalize.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./css/var.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <main class="main">
+         <section class="section">
+            <form class="form" autocomplete="off">
+               <h1 class="section__title">Create an Account</h1>
+               <div class="form__data data">
+                  <div class="data__flex">
+                     <label for="first-name" class="form__label"
+                        >First Name</label
+                     >
+                     <input type="text" id="first-name" class="form__input" />
+                  </div>
+                  <div class="data__flex">
+                     <label for="last-name" class="form__label"
+                        >Last Name</label
+                     >
+                     <input type="text" id="last-name" class="form__input" />
+                  </div>
+               </div>
+               <label for="mail" class="form__label">E-mail</label>
+               <input type="email" id="mail" class="form__input" />
+               <p class="bottom-text">
+                  We'll never share your email with anyone else.
+               </p>
+               <div class="form__gender gender">
+                  <label class="form__label">
+                     <input type="radio" name="gender" class="form__input" />
+                     <span></span>Male
+                  </label>
+                  <label class="form__label">
+                     <input type="radio" name="gender" class="form__input" />
+                     <span></span>
+                     Female
+                  </label>
+               </div>
+               <div class="form__address address">
+                  <div class="address__flex">
+                     <label for="country" class="form__label">Country </label>
+                     <select name="country" id="country" class="form__select">
+                        <option value="" selected disabled>Select</option>
+                        <option value="ukr">Ukraine</option>
+                        <option value="pol">Poland</option>
+                        <option value="fr">France</option>
+                        <option value="usa">USA</option>
+                     </select>
+                  </div>
+                  <div class="address__flex">
+                     <label for="city" class="form__label">City</label>
+                     <input type="text" id="city" class="form__input" />
+                  </div>
+               </div>
+               <button type="submit" class="form__button">Sign Up</button>
+               <div class="form__terms terms">
+                  <p class="terms__text">
+                     By clicking the 'Sign Up' button, you confirm that you
+                     accept our <a href="#">Terms of Use</a> and
+                     <a href="#">Privacy Policy</a>.
+                  </p>
+               </div>
+               <div class="form__login login">
+                  <p class="login__text">Have an account?</p>
+                  <p class="login__text">
+                     <a href="#" class="login__link">Log In</a>
+                  </p>
+               </div>
+            </form>
+         </section>
+         <section class="section">
+            <form class="form" autocomplete="off">
+               <h1 class="section__title">Profile</h1>
+               <div class="form__photo photo">
+                  <img src="./assets/img/photo.png" alt="" class="photo__img" />
+                  <label>
+                     <input type="file" class="form__input" />
+                     <img src="./assets/icons/camera.svg" alt="camera" />
+                  </label>
+                  <div class="trash">
+                     <a href=""
+                        ><img src="./assets/icons/trash.svg" alt="trash"
+                     /></a>
+                  </div>
+               </div>
+               <div class="form__data data">
+                  <div class="data__flex">
+                     <label for="name" class="form__label">Name</label>
+                     <input type="text" id="name" class="form__input" />
+                  </div>
+                  <div class="data__flex">
+                     <label for="e-mail" class="form__label">E-mail</label>
+                     <input type="text" id="e-mail" class="form__input" />
+                  </div>
+               </div>
+               <div class="form__address address">
+                  <div class="address__flex">
+                     <label for="country" class="form__label">Country </label>
+                     <select name="country" id="country" class="form__select">
+                        <option value="" selected disabled>Select</option>
+                        <option value="ukr">Ukraine</option>
+                        <option value="pol">Poland</option>
+                        <option value="fr">France</option>
+                        <option value="usa">USA</option>
+                     </select>
+                  </div>
+                  <div class="address__flex">
+                     <label for="city" class="form__label">City</label>
+                     <input type="text" id="city" class="form__input" />
+                  </div>
+               </div>
+               <div class="form__data data">
+                  <div class="data__flex">
+                     <label for="name" class="form__label">Zip Code</label>
+                     <input type="text" id="name" class="form__input" />
+                  </div>
+                  <div class="data__flex">
+                     <label for="e-mail" class="form__label"
+                        >Phone Number</label
+                     >
+                     <input type="text" id="e-mail" class="form__input" />
+                  </div>
+               </div>
+               <button type="submit" class="form__button form__button_small">
+                  Update
+               </button>
+            </form>
+         </section>
+      </main>
+   </body>
+</html>
