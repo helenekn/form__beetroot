@@ -163,6 +163,7 @@ body {
 .form__terms {
    max-width: 410px;
    padding-bottom: 20px;
+   margin: 0 auto;
 }
 
 .terms__text {
@@ -206,6 +207,16 @@ body {
    font-size: 15px;
    line-height: 1.5;
    letter-spacing: -0.1px;
+   color: #007bff;
+}
+
+.terms__link {
+   font-family: "Inter";
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 1.5;
+   letter-spacing: -0.1px;
+   color: #007bff;
 }
 
 .photo {
