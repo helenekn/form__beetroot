@@ -238,10 +238,9 @@ input[type="file"] {
    left: 106px;
    top: 23px;
    border: 1px solid #e4e4e4;
-   border-radius: 2px;
-}
-
-.photo label span img {
-   display: block;
-   max-width: 12px;
+   border-radius: 6px;
+   background-image: url(../assets/icons/camera.svg);
+   background-repeat: no-repeat;
+   background-position: right 10px top 50%;
+   padding: 3px;
 }
